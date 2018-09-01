@@ -12,6 +12,7 @@ class PausingInterval {
         this.startDate = new Date();
         this.remaining = this.delay;
         this.currentInterval = null;
+        this.currentTimeout = null;
 
 
         // Initializing Properties
@@ -37,7 +38,7 @@ class PausingInterval {
      */
     resume() {
         this.clear();
-        setTimeout((function () {
+        this.currentTimeout = setTimeout((function () {
             this.startDate = new Date();
             this.callback();
             this.remaining = this.delay;
@@ -56,6 +57,7 @@ class PausingInterval {
      */
     clear() {
         if (this.currentInterval) clearInterval(this.currentInterval);
+        if (this.currentTimeout) clearTimeout(this.currentTimeout);
         return this;
     }
 
