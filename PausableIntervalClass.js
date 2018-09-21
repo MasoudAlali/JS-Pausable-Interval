@@ -1,9 +1,9 @@
-class PausingInterval {
+export default class PausableInterval {
     /********************************
      * @Developer: Masoud Alali
      * @param callback
      * @param delay
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      ********************************/
     constructor(callback, delay) {
         // Properties
@@ -24,7 +24,7 @@ class PausingInterval {
 
     /**
      * Pause Interval until next resume call
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     pause() {
         this.clear();
@@ -34,7 +34,7 @@ class PausingInterval {
 
     /**
      * Resume the Interval
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     resume() {
         this.clear();
@@ -53,7 +53,7 @@ class PausingInterval {
 
     /**
      * Stop Interval and Clear Timers
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     clear() {
         if (this.currentInterval) clearInterval(this.currentInterval);
@@ -64,7 +64,7 @@ class PausingInterval {
     /**
      * Change Callback for next Intervals
      * @param callback
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     changeCallback(callback) {
         if (!!callback && typeof callback === typeof function () {
@@ -78,7 +78,7 @@ class PausingInterval {
     /**
      * Change Delay for next loops
      * @param delay
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     changeDelay(delay) {
         if (!!delay && typeof delay === typeof 1 && delay > 0) {
@@ -98,7 +98,7 @@ class PausingInterval {
     /**
      * Pause Interval for specific amount of time (ms)
      * @param ms
-     * @returns {PausingInterval}
+     * @returns {PausableInterval}
      */
     pauseFor(ms) {
         if (!ms || typeof ms !== typeof 1 || ms < 0)

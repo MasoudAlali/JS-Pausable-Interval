@@ -1,16 +1,25 @@
-# JavaScript Pausing Interval
+# JavaScript Pausable Interval
 
 Light-Weight simple Interval with some usefull functionalities
 
 ## Install
-- Just add `PausingInterval.js` to your project or `copy` the content
+- Just add `index.js` to your project or `copy` the content
+- or easily
+```bash
+    npm i js-pausable-interval --save
+```
 - There are `Class` version and `Function as a Constructor` version
 
 ## Functions
 
 - For Instantiation
 ```javascript
-  var myInterval = new PausingInterval(callback, delay);
+  // ES6
+  import PausableInterval from 'js-pausable-interval';
+  // ES5
+  const PausableInterval = require('js-pausable-interval');
+  
+  const myInterval = new PausableInterval(callback, delay);
 ```
 
 - Pasue & Resume

@@ -1,0 +1,25 @@
+{
+  "name": "js-pausable-interval",
+  "version": "0.1.2",
+  "description": "Light-weight simple interval with some usefull functionalities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasoudAlali/JS-Pausable-Interval.git"
+  },
+  "keywords": [
+    "pausable",
+    "interval",
+    "pause",
+    "setInterval"
+  ],
+  "author": "Masoud Alali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MasoudAlali/JS-Pausable-Interval/issues"
+  },
+  "homepage": "https://github.com/MasoudAlali/JS-Pausable-Interval#readme"
+}
