@@ -6,7 +6,7 @@ Light-Weight simple Interval with some usefull functionalities
 - Just add `index.js` to your project or `copy` the content
 - or easily
 ```bash
-    npm i js-pausable-interval --save
+    npm i pausable-interval --save
 ```
 - There are `Class` version and `Function as a Constructor` version
 
@@ -15,9 +15,9 @@ Light-Weight simple Interval with some usefull functionalities
 - For Instantiation
 ```javascript
   // ES6
-  import PausableInterval from 'js-pausable-interval';
+  import PausableInterval from 'pausable-interval';
   // ES5
-  const PausableInterval = require('js-pausable-interval');
+  const PausableInterval = require('pausable-interval');
   
   const myInterval = new PausableInterval(callback, delay);
 ```

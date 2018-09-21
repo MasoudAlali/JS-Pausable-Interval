@@ -1,6 +1,6 @@
 {
-  "name": "js-pausable-interval",
-  "version": "0.1.2",
+  "name": "pausable-interval",
+  "version": "0.1.0",
   "description": "Light-weight simple interval with some usefull functionalities",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "setInterval"
   ],
   "author": "Masoud Alali",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MasoudAlali/JS-Pausable-Interval/issues"
   },
